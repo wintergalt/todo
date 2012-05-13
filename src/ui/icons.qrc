@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/">
+    <file>priority-1.png</file>
+    <file>priority-2.png</file>
+    <file>priority-3.png</file>
+    <file>list-add.png</file>
+    <file>list-remove.png</file>
+    <file>stock_search-and-replace.png</file>
+    <file>accessories-text-editor.png</file>
+  </qresource>
+</RCC>

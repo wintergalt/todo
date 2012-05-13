@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>605</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tasks!</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/accessories-text-editor.png</normaloff>:/accessories-text-editor.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTreeView" name="treeView">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="headerVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="headerVisible">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>605</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Open"/>
+    <addaction name="separator"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_Todo_Help"/>
+    <addaction name="separator"/>
+    <addaction name="actionA_bout_Todo"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tasks">
+    <property name="title">
+     <string>&amp;Tasks</string>
+    </property>
+    <addaction name="actionNew_Task"/>
+    <addaction name="actionEdit_Task"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Task"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Tasks"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_Task"/>
+   <addaction name="actionEdit_Task"/>
+   <addaction name="separator"/>
+   <addaction name="actionDelete_Task"/>
+  </widget>
+  <action name="action_Todo_Help">
+   <property name="text">
+    <string>&amp;Todo Help...</string>
+   </property>
+  </action>
+  <action name="actionA_bout_Todo">
+   <property name="text">
+    <string>A&amp;bout Todo...</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Open...</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionDelete_Task">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/list-remove.png</normaloff>:/list-remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Task</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionNew_Task">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/list-add.png</normaloff>:/list-add.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Task</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionEdit_Task">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/stock_search-and-replace.png</normaloff>:/stock_search-and-replace.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Task</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
